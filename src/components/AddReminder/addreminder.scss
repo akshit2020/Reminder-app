@@ -1,0 +1,102 @@
+
+@import '../../theme.scss';
+.new_reminder{
+    background: $p1_color;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    // // transform-origin: top;
+    // -webkit-transition: transform 2s linear;
+    // transition: transform 2s ease;
+    // transform-style: preserve-3D;
+    
+    h1{
+        text-align: center;
+        color: $p2_color;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 10px 0 20px;
+    }
+    input{
+        -webkit-appearance: none;
+        appearance: none;
+        background: $p1_color;
+        border: none;
+        display: block;
+        width: 100%;
+        padding: 8px 5px;
+        margin-bottom: 10px;
+        border-bottom: $p2_color solid 1px;
+        outline: none;
+        color: $p2_color;
+        background: rgba(29,93,160,0.5);
+        font-size: 1rem;
+        height: 40px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        &::placeholder{
+            color: $p2_color;
+        }
+    }
+
+    &__add{
+        text-transform: uppercase;
+        text-align: center;
+        border: $p2_color solid 1px;
+        border-radius: 5px;
+        padding: 10px;
+        color: $p2_color;
+        font-weight: bold;
+        max-width: 100%;
+        margin: 40px auto;
+        background: $p2_color;
+        color: $p1_color;       
+    }
+
+    &__close{
+        color: $p2_color;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .show-err{
+        input{
+            border-bottom: $p3_color solid 1px;
+        }
+    }
+}
+
+.trans__reminder{
+    transform: translate(0, 328px);
+}
+
+.success__msg{
+    position: absolute;
+    left: 0;
+    width: 300px;
+    text-align: center;
+    color: $p2_color;
+    font-weight: bold;
+    top: 0;
+    padding: 17px 0;
+    z-index: 5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    background: rgba(0,0,0,0.7);
+    margin-top: -50px;
+}
